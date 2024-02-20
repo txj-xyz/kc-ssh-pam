@@ -110,7 +110,7 @@ realm = "ssh-demo"
 endpoint = "https://keycloak.example.com"
 clientid = "keycloak-client-id"
 clientsecret = "MIKEcHObWmI3V3pF1hcSqC9KEILfLN"
-clientscop = "openid"
+clientscope = "openid"
 
   ```
 * Edit `/etc/pam.d/sshd` and add the following at the top of file
@@ -145,7 +145,7 @@ sudo systemctl restart sshd
 ```
 
 ### Keycloak Cleint Creation
-```bash
+```txt
 Step 1: Log in to the Keycloak Administration Console.
 
 Step 2: Select the realm for which you want to create the client.
@@ -165,7 +165,9 @@ Step 8: In the "Standard Flow Enabled" field, select "ON".
 Step 9: In the "Direct Access Grants Enabled" field, select "ON".
 
 Step 10: Click on the "Save" button to create the client.
+```
 
+```txt
 To get the credentials of the client, follow these steps:
 
 Step 1: Go to the "Clients" page in the Keycloak Administration Console.
